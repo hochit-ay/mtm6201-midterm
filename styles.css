@@ -134,13 +134,22 @@ body {
     align-self: center;
 }
 
+/* MAKE THE NAV BAR STICK TO THE BOTTOM */
+.nav-bar-position {
+    position: fixed;
+    z-index: 100; 
+    bottom: 0; 
+    left: 0;
+    right:0;
+    width: 100%;
+}
+
 /* NAV BAR */
 .nav-bar {
     display: flex;
     background-color: #FAFAFA;
     padding: 1rem 3rem 1rem 3rem;
     justify-content: space-between;
-    z-index:500;
 }
 
 a {
@@ -334,6 +343,14 @@ a {
     .content {
         display: flex;
         flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    /* MAKE NAV BAR STICK TO THE TOP */
+    .nav-bar-position{
+        position:fixed;
+        top:0;
+        left:0;
     }
 
     .nav-bar {
