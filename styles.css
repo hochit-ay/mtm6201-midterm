@@ -1,0 +1,404 @@
+/* MOBILE FIRST */
+
+/* STYLING THE SKIP LINK */
+.skip {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.skip a {
+    padding: 10px;
+    position: absolute;
+    top: -50px;
+    text-decoration: none;
+}
+
+.skip a:focus {
+    outline: 5px solid #0D65D8;
+    top: 0;
+}
+
+
+/* SETTING THE FONT, MIN-WIDTH & MAX-WIDTH FOR THE WHOLE WEBSITE */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth"100;
+    min-width: 320px;
+    max-width: 1920px;
+}
+
+/* HOMEPAGE */
+/* PROFILE PICTURE */
+.pro-pic-home {
+    display: flex;
+    justify-content: right;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+/* WELCOME MESSAGE AND BUTTONS */
+.content {
+    padding: 1rem;
+}
+
+.welcome-intro {
+    margin-top: 2rem;
+    line-height: 1.5;
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    background-color: lightgrey;
+    border: none;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.button:hover {
+    background-color: #0D65D8;
+    color: white;
+}
+
+/* TRENDING CHARITIES & STYLING THE IMG*/
+.trending {
+    margin-top: 2rem;
+    color: gray;
+}
+
+.charity-img {
+    border-radius: 8px;
+}
+
+/* PROGRESS BAR & ANIMATION */
+.progress-bar-container {
+    background-color: lightgrey;
+    height: 0.5rem;
+}
+
+.progress-bar {
+    background-color: #0D65D8;
+    height: 0.5rem;
+    width: 50%;
+    animation-name: progress;
+    animation-duration: 3s;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%
+    }
+}
+
+/* MONEY RAISED TEXT */
+.money-raised {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+.total {
+    grid-column: 1/2;
+    align-self: center;
+}
+
+.grey-money {
+    grid-column: 4/5;
+    text-align: right;
+    align-self: center;
+}
+
+.blue-money {
+    grid-column: 5/6;
+    color: #0D65D8;
+    font-size: 1.5rem;
+    text-align: right;
+    align-self: center;
+}
+
+/* NAV BAR */
+.nav-bar {
+    display: flex;
+    background-color: #FAFAFA;
+    padding: 1rem 3rem 1rem 3rem;
+    justify-content: space-between;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.nav-text {
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+/* DONATION PAGE */
+/* PROGRESS BAR & ANIMATION */
+.progress-bar-end {
+    background-color: greenyellow;
+    height: 0.5rem;
+    width: 100%;
+    animation-name: end;
+    animation-duration: 2s;
+}
+
+@keyframes end {
+    0% {
+        width: 0%;
+        background-color: #0D65D8;
+    }
+
+    100% {
+        width: 100%;
+        background-color: greenyellow;
+    }
+}
+
+.gree-money {
+    color: green;
+    font-weight: 800;
+    animation-name: text;
+    animation-duration: 2s;
+}
+
+@keyframes text {
+    0% {
+        font-size: 0.8rem;
+        color: #0D65D8;
+    }
+
+    100% {
+        font-weight: 800;
+        color: green;
+    }
+}
+
+/* DONATION INFO */
+.profile-project {
+    display: flex;
+    align-items: center;
+}
+
+.profile-project-name {
+    margin-left: 1rem;
+}
+
+.profile-project-text {
+    color: gray;
+}
+
+.donation-button {
+    display: flex;
+    justify-content: center;
+}
+
+.blue-button {
+    background-color: #0D65D8;
+    color: white;
+    border: none;
+    padding: 1rem 3rem 1rem 3rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* GET STARTRED PAGE*/
+.splash-heading {
+    text-align: center;
+    color: #0D65D8;
+    margin-bottom: 0;
+}
+
+.splash-text {
+    text-align: center;
+    color: gray;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.splash-button {
+    display: flex;
+    justify-content: center;
+    animation-name: roll-in;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+/* ANIMATION FOR THE GET STARTED BUTTON*/
+@keyframes roll-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%) rotate(-120deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px) rotate(0deg);
+    }
+  }
+
+.get-started-button {
+    background-color: #0D65D8;
+    color: white;
+    border: none;
+    padding: 0.8rem 4rem 0.8rem 4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* ANIMATION FOR THE GET STARTED PAGE*/
+.splash-top {
+    animation-name: roll;
+    animation-duration: 2s;
+}
+
+.splash-img {
+    animation-name: roll;
+    animation-duration: 3s;
+}
+
+@keyframes roll {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+
+
+
+
+/* DESKTOP VERSION */
+@media only screen and (min-width: 769px) {
+
+    /* DESKTOP - GET STARTRED PAGE*/
+    .splash-img {
+        position: relative;
+    }
+
+    .splash-button {
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        top: 30%;
+    }
+
+    .get-started-button {
+        margin: 0;
+        padding: 0.8rem 5rem 0.8rem 5rem;
+    }
+
+    /* NAV BAR MOVED TO TOP */
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        order: -99;
+        margin-bottom: 2rem;
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    /* DESKTOP - HOMEPAGE */
+    .welcome-top {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .welcome-text {
+        flex-direction: column;
+        align-self: center;
+        flex-grow: 3;
+        margin-left: 2rem;
+    }
+
+    .welcome-intro {
+        font-size: 0.9rem;
+    }
+
+    .buttons {
+        gap: 2rem;
+    }
+
+    .button {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        align-self: center;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    /* DESKTOP - MAIN CONTENT OF HOMEPAGE */
+    .trending {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .charities {
+        display: grid;
+        grid-template-areas:
+            "img info info";
+        justify-content: center;
+        align-items: center;
+    }
+
+    .charity-img {
+        grid-area: img;
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .charity-info {
+        grid-area: info;
+        align-items: center;
+    }
+
+    /* DESKTOP - DONATION PAGE */
+    .info-project {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
