@@ -112,7 +112,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     color: gray;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .total {
@@ -232,6 +232,7 @@ a {
 .donation-button {
     display: flex;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .blue-button {
