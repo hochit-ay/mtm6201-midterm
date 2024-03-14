@@ -348,7 +348,7 @@ body {
 @media only screen and (min-width: 769px) {
 
     .content {
-        padding: 3rem;
+        padding: 5rem;
     }
 
 
@@ -446,3 +446,4 @@ body {
         display: flex;
         align-items: baseline;
     }
+}
