@@ -153,10 +153,10 @@ body {
 /* MAKE THE NAV BAR STICK TO THE BOTTOM */
 .nav-bar-position {
     position: fixed;
-    z-index: 100; 
-    bottom: 0; 
+    z-index: 100;
+    bottom: 0;
     left: 0;
-    right:0;
+    right: 0;
     width: 100%;
 }
 
@@ -183,16 +183,20 @@ body {
     align-items: center;
 }
 
-.nav-item-home:hover #home-icon{fill:#0D65D8;}
+.nav-item-home:hover #home-icon {
+    fill: #0D65D8;
+}
 
-.nav-text-home  {
+.nav-text-home {
     font-size: 0.6rem;
     font-weight: 600;
     text-align: center;
     margin-top: 0.3rem;
 }
 
-.nav-item-home:hover .nav-text-home {color:#0D65D8;}
+.nav-item-home:hover .nav-text-home {
+    color: #0D65D8;
+}
 
 
 /* CHARITIES */
@@ -202,16 +206,20 @@ body {
     align-items: center;
 }
 
-.nav-item-charities:hover #charities-icon{fill:#0D65D8;}
+.nav-item-charities:hover #charities-icon {
+    fill: #0D65D8;
+}
 
-.nav-text-charities  {
+.nav-text-charities {
     font-size: 0.6rem;
     font-weight: 600;
     text-align: center;
     margin-top: 0.3rem;
 }
 
-.nav-item-charities:hover .nav-text-charities {color:#0D65D8;}
+.nav-item-charities:hover .nav-text-charities {
+    color: #0D65D8;
+}
 
 /* DONATION */
 .nav-item-donation {
@@ -220,22 +228,28 @@ body {
     align-items: center;
 }
 
-.nav-item-donation:hover #donation-icon{fill:#0D65D8;}
+.nav-item-donation:hover #donation-icon {
+    fill: #0D65D8;
+}
 
-.nav-text-donation  {
+.nav-text-donation {
     font-size: 0.6rem;
     font-weight: 600;
     text-align: center;
     margin-top: 0.3rem;
 }
 
-.nav-item-donation:hover .nav-text-donation {color:#0D65D8;}
+.nav-item-donation:hover .nav-text-donation {
+    color: #0D65D8;
+}
 
 /* DONATION PAGE */
-.top-icons {display: flex;
+.top-icons {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1rem;}
+    margin-bottom: 1rem;
+}
 
 /* PROGRESS BAR & ANIMATION */
 .progress-bar-end {
@@ -312,12 +326,14 @@ body {
 
 /* CHARITIES PAGE */
 .charities-welcome-top {
-    display:flex;
+    display: flex;
 }
 
-.search {display: flex;
-align-items: baseline;
-flex-grow: 2;}
+.search {
+    display: flex;
+    align-items: baseline;
+    flex-grow: 2;
+}
 
 .pro-pic-charities {
     display: flex;
@@ -325,98 +341,16 @@ flex-grow: 2;}
     align-items: center;
 }
 
-/* GET STARTRED PAGE
-.splash-heading {
-    text-align: center;
-    color: #0D65D8;
-    margin-bottom: 0;
-}
-
-.splash-text {
-    text-align: center;
-    color: #333333;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-}
-
-.splash-button {
-    display: flex;
-    justify-content: center;
-    animation-name: roll-in;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-}
-/* ANIMATION FOR THE GET STARTED BUTTON
-@keyframes roll-in {
-    0% {
-      opacity: 0;
-      transform: translateX(-100%) rotate(-120deg);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0px) rotate(0deg);
-    }
-  }
-
-.get-started-button {
-    background-color: #0D65D8;
-    color: white;
-    border: none;
-    padding: 0.8rem 4rem 0.8rem 4rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 8px;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-
-/* ANIMATION FOR THE GET STARTED PAGE
-.splash-top {
-    animation-name: roll;
-    animation-duration: 2s;
-}
-
-.splash-img {
-    animation-name: roll;
-    animation-duration: 3s;
-}
-
-@keyframes roll {
-    0% {
-        opacity: 0;
-        transform: translateY(-80px)
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px)
-    }
-} */
-
-
 
 
 
 /* DESKTOP VERSION */
 @media only screen and (min-width: 769px) {
 
-    /* DESKTOP - GET STARTRED PAGE
-    .splash-img {
-        position: relative;
+    .content {
+        padding: 3rem;
     }
 
-    .splash-button {
-        position: absolute;
-        right: 50%;
-        left: 50%;
-        top: 30%;
-    }
-
-    .get-started-button {
-        margin: 0;
-        padding: 0.8rem 5rem 0.8rem 5rem;
-    } */
 
     /* NAV BAR MOVED TO TOP */
     .content {
@@ -426,10 +360,10 @@ flex-grow: 2;}
     }
 
     /* MAKE NAV BAR STICK TO THE TOP */
-    .nav-bar-position{
-        position:fixed;
-        top:0;
-        left:0;
+    .nav-bar-position {
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     .nav-bar {
@@ -470,6 +404,8 @@ flex-grow: 2;}
     }
 
     /* DESKTOP - MAIN CONTENT OF HOMEPAGE */
+
+
     .trending {
         text-align: center;
         margin-bottom: 1rem;
@@ -501,15 +437,12 @@ flex-grow: 2;}
     }
 
     /* DESKTOP - CHARITIES PAGE */
-.charities-welcome-top {
-    display: flex;
-    justify-content: space-around;
-}
+    .charities-welcome-top {
+        display: flex;
+        justify-content: space-around;
+    }
 
-.search {display: flex;
-align-items: baseline;}
-
-.pro-pic-charities {
-    display: flex;
-    justify-content: right;
-    align-items: center;}
+    .search {
+        display: flex;
+        align-items: baseline;
+    }
