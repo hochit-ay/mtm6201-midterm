@@ -89,15 +89,12 @@ body {
     color: white;
 }
 
-/* TRENDING CHARITIES & STYLING THE IMG*/
+/* TRENDING CHARITIES*/
 .trending {
     margin-top: 2rem;
     color: #333333;
 }
-
-.charity-img {
-    border-radius: 8px;
-}
+    
 
 /* PROGRESS BAR & ANIMATION */
 .progress-bar-container {
@@ -348,7 +345,7 @@ body {
 @media only screen and (min-width: 769px) {
 
     .content {
-        padding: 5rem;
+        padding: 3rem;
     }
 
 
@@ -424,6 +421,8 @@ body {
         width: 80%;
         margin-bottom: 2rem;
     }
+
+    .charity-img-charities {width:80%;}
 
     .charity-info {
         grid-area: info;
