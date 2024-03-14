@@ -49,23 +49,39 @@ body {
 .welcome-intro {
     margin-top: 2rem;
     line-height: 1.5;
-    color: gray;
+    color: #333333;
     margin-bottom: 2rem;
 }
 
 .buttons {
     display: flex;
     justify-content: space-around;
+    margin-top: 3rem;
 }
 
-.button {
-    background-color: lightgrey;
+.button-profile {
+    background-color: #0D65D8;
+    color: white;
     border: none;
-    padding: 0.8rem 2rem 0.8rem 2rem;
-    text-align: center;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
     border-radius: 8px;
     margin-bottom: 2rem;
+    height: 3rem;
+}
+
+.button-dismiss {
+    background-color: lightgrey;
+    border: none;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    height: 3rem;
 }
 
 .button:hover {
@@ -76,7 +92,7 @@ body {
 /* TRENDING CHARITIES & STYLING THE IMG*/
 .trending {
     margin-top: 2rem;
-    color: gray;
+    color: #333333;
 }
 
 .charity-img {
@@ -111,7 +127,7 @@ body {
 .money-raised {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    color: gray;
+    color: #333333;
     margin-bottom: 3rem;
 }
 
@@ -147,34 +163,80 @@ body {
 /* NAV BAR */
 .nav-bar {
     display: flex;
-    background-color: #FAFAFA;
+    background-color: #EFEFEF;
     padding: 1rem 3rem 1rem 3rem;
     justify-content: space-between;
 }
 
-a {
+/* a {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-decoration: none;
     color: black;
-}
+} */
 
-.nav-item {
+/* HOME */
+.nav-item-home {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.nav-item-home:hover #home-icon{fill:#0D65D8;}
 
-.nav-text {
+.nav-text-home  {
     font-size: 0.6rem;
     font-weight: 600;
     text-align: center;
     margin-top: 0.3rem;
 }
 
+.nav-item-home:hover .nav-text-home {color:#0D65D8;}
+
+
+/* CHARITIES */
+.nav-item-charities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item-charities:hover #charities-icon{fill:#0D65D8;}
+
+.nav-text-charities  {
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.nav-item-charities:hover .nav-text-charities {color:#0D65D8;}
+
+/* DONATION */
+.nav-item-donation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-item-donation:hover #donation-icon{fill:#0D65D8;}
+
+.nav-text-donation  {
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.nav-item-donation:hover .nav-text-donation {color:#0D65D8;}
+
 /* DONATION PAGE */
+.top-icons {display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;}
+
 /* PROGRESS BAR & ANIMATION */
 .progress-bar-end {
     background-color: greenyellow;
@@ -226,7 +288,7 @@ a {
 }
 
 .profile-project-text {
-    color: gray;
+    color: #333333;
 }
 
 .donation-button {
@@ -245,9 +307,25 @@ a {
     border-radius: 8px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    text-decoration: none;
 }
 
-/* GET STARTRED PAGE*/
+/* CHARITIES PAGE */
+.charities-welcome-top {
+    display:flex;
+}
+
+.search {display: flex;
+align-items: baseline;
+flex-grow: 2;}
+
+.pro-pic-charities {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/* GET STARTRED PAGE
 .splash-heading {
     text-align: center;
     color: #0D65D8;
@@ -256,7 +334,7 @@ a {
 
 .splash-text {
     text-align: center;
-    color: gray;
+    color: #333333;
     margin-top: 1rem;
     margin-bottom: 3rem;
 }
@@ -268,7 +346,7 @@ a {
     animation-duration: 3s;
     animation-timing-function: ease;
 }
-/* ANIMATION FOR THE GET STARTED BUTTON*/
+/* ANIMATION FOR THE GET STARTED BUTTON
 @keyframes roll-in {
     0% {
       opacity: 0;
@@ -293,7 +371,7 @@ a {
     margin-bottom: 2rem;
 }
 
-/* ANIMATION FOR THE GET STARTED PAGE*/
+/* ANIMATION FOR THE GET STARTED PAGE
 .splash-top {
     animation-name: roll;
     animation-duration: 2s;
@@ -314,7 +392,7 @@ a {
         opacity: 1;
         transform: translateY(0px)
     }
-}
+} */
 
 
 
@@ -323,7 +401,7 @@ a {
 /* DESKTOP VERSION */
 @media only screen and (min-width: 769px) {
 
-    /* DESKTOP - GET STARTRED PAGE*/
+    /* DESKTOP - GET STARTRED PAGE
     .splash-img {
         position: relative;
     }
@@ -338,7 +416,7 @@ a {
     .get-started-button {
         margin: 0;
         padding: 0.8rem 5rem 0.8rem 5rem;
-    }
+    } */
 
     /* NAV BAR MOVED TO TOP */
     .content {
@@ -421,3 +499,18 @@ a {
         padding-left: 5rem;
         padding-right: 5rem;
     }
+
+    /* DESKTOP - CHARITIES PAGE */
+.charities-welcome-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.search {display: flex;
+align-items: baseline;}
+
+.pro-pic-charities {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}

@@ -26,17 +26,35 @@
 <!-- THIS IS A WRAPPER FOR ALL THE CONTENT IN THIS PAGE -->
 <div class="content" itemscope itemtype="http://schema.org/WebPage">
 
+<!-- ICONS AT THE TOP -->
+<div class="top-icons">
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="11.414" viewBox="0 0 25 11.414">
+    <g id="arrow-left" transform="translate(0.5 0.707)">
+      <path id="Path" d="M23.333.833H0" transform="translate(0.667 4.167)" fill="none" stroke="#27282b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="Path-2" data-name="Path" d="M5,10,0,5,5,0" fill="none" stroke="#27282b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </svg>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="4" viewBox="0 0 18 4">
+    <g id="more-horizontal" transform="translate(1 1)">
+      <circle id="Oval" cx="1" cy="1" r="1" transform="translate(7)" fill="none" stroke="#27282b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Oval-2" data-name="Oval" cx="1" cy="1" r="1" transform="translate(14)" fill="none" stroke="#27282b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+      <circle id="Oval-3" data-name="Oval" cx="1" cy="1" r="1" fill="none" stroke="#27282b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </svg>  
+</div>
+
 <!-- MAIN CONTENT -->
     <div id="main-content" itemprop="mainContentOfPage">
 
     <!-- IMAGE -->
     <div class="charities">
-    <picture>
-        <source media="(max-width:769px)" srcset="images/donation-1-320.jpg, images/donation-1-769.jpg 2x">
-        <source media="(max-width:1920px)"
-            srcset="images/donation-1-769-vertical.jpg, images/donation-1-1280-vertical.jpg 2x">
-        <img src="images/donation-1-320.jpg" alt="Ghana Residential Fund" width="100%" class="charity-img">
-    </picture>
+        <picture>
+            <source media="(max-width:769px)" srcset="images/list-1-320.jpg, images/list-1-769.jpg 2x">
+            <source media="(max-width:1920px)"
+            srcset="images/list-1-769.jpg, images/list-1-1280.jpg 2x">
+            <img src="images/list-1-320.jpg" alt="Ghana Residential Fund" width="100%" class="charity-img">
+        </picture>
 
     <div class="charity-info">
     <h3 class="charities-name">Ghana Residential Fund</h3>
@@ -76,45 +94,51 @@ Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tin
 </div>
 </div>
 
-
-<!-- NAV BAR -->
-<div class="nav-bar-position">
+   <!-- NAV BAR -->
+   <div class="nav-bar-position">
     <div class="nav-bar" role="menu">
 
-        <div class="nav-item">
-            <a href="home.html" role="menuitem">
-        <span class="material-symbols-outlined">
-            home
-        </span>
-        <p class="nav-text">HOME</p>
-        </a>
+        <div class="nav-item-home">
+            <svg id="home" xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                <a href="index.html" role="menuitem">
+                    <path id="home-icon" d="M5.769,14V9.333H9.231V14H12.75V7H15L7.5,0,0,7H2.25v7Z"
+                        fill="#27282b" />
+                </a>
+                <a href="index.html" role="menuitem">
+                    <p class="nav-text-home">HOME</p>
+                </a>
+            </svg>
         </div>
- 
 
-    <div class="nav-item">
-        <a href="donation.html" role="menuitem">
-        <span class="material-symbols-outlined">
-            favorite
-        </span>
-        <p class="nav-text">DONATION</p>
-        </a>
-    </div>
+        <div class="nav-item-charities">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13.335" height="11.333" viewBox="0 0 13.335 11.333">
+                <a href="charities.html" role="menuitem">
+                    <path id="charities-icon"
+                        d="M6.668,11.333a.667.667,0,0,1-.473-.193L1.014,5.953A3.488,3.488,0,0,1,5.948,1.02l.72.72.72-.72a3.488,3.488,0,1,1,4.933,4.933L7.141,11.14A.667.667,0,0,1,6.668,11.333Z"
+                        fill="#27282b" />
+                </a>
+                <a href="charities.html" role="menuitem">
+                    <p class="nav-text-charities">CHARITIES</p>
+                </a>
+            </svg>
+        </div>
 
-    <div class="nav-item">
-        <a href="index.html" role="menuitem">
-            <span class="material-symbols-outlined">
-                logout
-                </span>
-        <p class="nav-text">LOG OUT</p>
-    </a>
-    </div>
-
+        <div class="nav-item-donation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13.335" height="11.333" viewBox="0 0 13.335 11.333">
+                <a href="donation.html" role="menuitem">
+                    <path id="donation-icon"
+                        d="M6.668,11.333a.667.667,0,0,1-.473-.193L1.014,5.953A3.488,3.488,0,0,1,5.948,1.02l.72.72.72-.72a3.488,3.488,0,1,1,4.933,4.933L7.141,11.14A.667.667,0,0,1,6.668,11.333Z"
+                        fill="#27282b" />
+                </a>
+                <a href="donation.html" role="menuitem">
+                    <p class="nav-text-donation">DONATION</p>
+                </a>
+            </svg>
+        </div>
     </div>
 </div>
+
 </div>
-
-
-
 
 </body>
 </html>

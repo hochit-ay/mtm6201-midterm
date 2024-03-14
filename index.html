@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Website</title>
+    <title>Home</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,26 +16,164 @@
 
 <body>
 
-    <!-- TEXT AT THE TOP -->
-<div class="splash-top">
-<h1 class="splash-heading">Acts.Of.Life</h1>
-<p class="splash-text">Sharing made social.</p>
-</div>
+    <!-- SKIP TO MAIN CONTENT -->
+    <ul class="skip">
+        <li>
+            <a href="#main-content" aria-label="Skip to Main Content">
+                Skip to Main Content
+            </a>
+        </li>
+    </ul>
 
- <!-- IMAGE -->
- <div class="splash-content" role="banner">
- <picture>
-    <source media="(max-width:769px)" srcset="images/splash-320.jpg, images/splash-769.jpg 2x">
-    <source media="(max-width:1920px)"
-        srcset="images/splash-769-horizontal.jpg, images/splash-1280-horizontal.jpg 2x">
-    <img src="images/splash-320.jpg" alt="Happy Children" width="100%" class="splash-img">
-</picture>
+    <!-- THIS IS A WRAPPER FOR ALL THE CONTENT IN THIS PAGE -->
+    <div class="content">
 
-<!-- GET STARTED BUTTON -->
-<div class="splash-button">
-    <a href="home.html" role="button" class="get-started-button"> GET STARTED </a>
-</div>
-</div>
+        <!-- PROFILE PICTURE -->
+        <div class="welcome-top" role="complementary">
+            <div class="pro-pic-home" itemscope itemtype="https://schema.org/Person">
+                <img src="images/pro-pic.png" alt="profile picture" width="40" height="40" aria-label="Profile Picture">
+            </div>
+
+            <!-- WELCOME MESSAGE -->
+            <div class="welcome-text" role="complementary">
+                <div class="welcome-heading">
+                    <h1> <span class="welcome">Welcome,</span>
+                        <br>
+                        <span class="matthew">Matthew Anderson</span></h1>
+                </div>
+
+                <div class="welcome-intro">
+                    <p>Let's get started by adding more information to your profile.</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="button-profile">GO TO PROFILE</button>
+                <button type="button" class="button-dismiss">DISMISS</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- MAIN CONTENT -->
+        <div id="main-content" itemscope itemtype="http://schema.org/WebPage">
+
+            <p class="trending" itemprop="mainContentOfPage">Trending Charities</p>
+
+            <!-- FIRST CHARITY -->
+            <div class="charities">
+
+                <!-- IMAGE -->
+                <picture>
+                    <source media="(max-width:769px)" srcset="images/charity-1-320.jpg, images/charity-1-769.jpg 2x">
+                    <source media="(max-width:1920px)"
+                        srcset="images/charity-1-769.jpg, images/charity-1-1280.jpg 2x">
+                    <img src="images/charity-1-320.jpg" alt="St. Loueis Welfare Org." width="100%" class="charity-img">
+                </picture>
+
+                <div class="charity-info">
+                    <h3 class="charities-name">St. Loueis Welfare Org.</h3>
+
+                    <!-- PROGRESS BAR -->
+                    <div class="container">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+
+                    <!-- PROGRESS TEXT -->
+                    <div class="money-raised">
+                        <p class="total">TOTAL RAISED</p>
+
+
+                        <p class="grey-money"><s>$10,000</s></p>
+                        <p class="blue-money">$12,500</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECOND CHARITY -->
+            <div class="charities">
+
+                <!-- IMAGE -->
+                <picture>
+                    <source media="(max-width:769px)" srcset="images/charity-2-320.jpg, images/charity-2-769.jpg 2x">
+                    <source media="(max-width:1920px)"
+                        srcset="images/charity-2-769-vertical.jpg, images/charity-2-1280-vertical.jpg 2x">
+                    <img src="images/charity-2-320.jpg" alt="St. Loueis Welfare Org." width="100%"
+                        class="charity-img">
+                </picture>
+
+                <div class="charity-info">
+                    <h3 class="charities-name">St. Loueis Welfare Org.</h3>
+
+                    <!-- PROGRESS BAR -->
+                    <div class="container">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+
+                    <!-- PROGRESS TEXT -->
+                    <div class="money-raised">
+                        <p class="total">TOTAL RAISED</p>
+
+
+                        <p class="grey-money"><s>$10,000</s></p>
+                        <p class="blue-money">$12,500</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- NAV BAR -->
+        <div class="nav-bar-position">
+            <div class="nav-bar" role="menu">
+
+                <div class="nav-item-home">
+                    <svg id="home" xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+                        <a href="index.html" role="menuitem">
+                            <path id="home-icon" d="M5.769,14V9.333H9.231V14H12.75V7H15L7.5,0,0,7H2.25v7Z"
+                                fill="#27282b" />
+                        </a>
+                        <a href="index.html" role="menuitem">
+                            <p class="nav-text-home">HOME</p>
+                        </a>
+                    </svg>
+                </div>
+
+                <div class="nav-item-charities">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13.335" height="11.333" viewBox="0 0 13.335 11.333">
+                        <a href="charities.html" role="menuitem">
+                            <path id="charities-icon"
+                                d="M6.668,11.333a.667.667,0,0,1-.473-.193L1.014,5.953A3.488,3.488,0,0,1,5.948,1.02l.72.72.72-.72a3.488,3.488,0,1,1,4.933,4.933L7.141,11.14A.667.667,0,0,1,6.668,11.333Z"
+                                fill="#27282b" />
+                        </a>
+                        <a href="charities.html" role="menuitem">
+                            <p class="nav-text-charities">CHARITIES</p>
+                        </a>
+                    </svg>
+                </div>
+
+                <div class="nav-item-donation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13.335" height="11.333" viewBox="0 0 13.335 11.333">
+                        <a href="donation.html" role="menuitem">
+                            <path id="donation-icon"
+                                d="M6.668,11.333a.667.667,0,0,1-.473-.193L1.014,5.953A3.488,3.488,0,0,1,5.948,1.02l.72.72.72-.72a3.488,3.488,0,1,1,4.933,4.933L7.141,11.14A.667.667,0,0,1,6.668,11.333Z"
+                                fill="#27282b" />
+                        </a>
+                        <a href="donation.html" role="menuitem">
+                            <p class="nav-text-donation">DONATION</p>
+                        </a>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
